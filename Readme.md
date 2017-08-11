@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Светлана Костина](https://up.htmlacademy.ru/htmlcss/18/user/378011).
-* Наставник: [Владимир Кабыш] (https://up.htmlacademy.ru/htmlcss/18/user/78399).
+* Наставник: [Владимир Кабыш](https://up.htmlacademy.ru/htmlcss/18/user/78399).
 
 ---
 
