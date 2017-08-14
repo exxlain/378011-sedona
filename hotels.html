@@ -12,10 +12,10 @@
                     <img src="img/index-logo.svg" width="138" height="70" alt="Логотип Седоны">
               </a>
               <ul class="site-navigation">
-                  <li><a href="info.html">Информация</a></li>
+                  <li ><a href="info.html">Информация</a></li>
                   <li><a href="foto_and_video.html">Фото и видео</a></li>
                   <li><a href="map.html">Карта штата</a></li>
-                  <li><a href="hotels.html">Гостиницы</a></li>
+                  <li class="site-navigation-current"><a href="hotels.html">Гостиницы</a></li>
               </ul>
           </nav>
       </header>
@@ -24,7 +24,7 @@
           <section class="hotels">
               <div class="filters">
                   <h2 class="visually-hidden">Фильтр отелей</h2>
-                  <form class="filter" method="get" action="https://echo,htmlacademy.ru">
+                  <form class="filter" method="get" action="https://echo.htmlacademy.ru">
                   <fieldset>
                       <legend>Инфраструктура:</legend>
                       <ul>
@@ -34,11 +34,11 @@
                           </li>
                         <li class="filter-option"> 
                           <input type="checkbox" id="parking">
-                          <label for="pool">Парковка</label>
+                          <label for="parking">Парковка</label>
                         </li>
                         <li class="filter-option"> 
                           <input type="checkbox" id="wifi">
-                          <label for="pool">Wi-Fi</label>
+                          <label for="wifi">Wi-Fi</label>
                         </li>
                       </ul>
                   </fieldset>
@@ -59,52 +59,59 @@
                         </li>
                      </ul>
                   </fieldset>
-                  </form>
-                  <div class="cost-per-day">
-                      <label for="price" >Стоимость в сутки (p):</label>
+                  <fieldset>
+                  <legend>Стоимость в сутки (p):</legend>
                       <div class="range_price">от 0 до 300</div>
-                      <input type="range" id="price">
-                  </div>
-                  <button type="submit">Показать</button> 
+                      <div class="slider"></div>
+                      <a class="price button" href="#">Показать</a>
+                   </fieldset>
+                   </form>
               </div>
           </section>
           <section class="hotels-results">
                   <h2 class="visually-hidden">Результаты поиска</h2>
+              <div class="results-quantity-sort">
               <p class="quantity">Найдено: 3</p>
               <p class="sort-by">Сортировка:</p>
-              <a class="sort" href="#">по цене</a>
+              <a class="sort active-sort" href="#">по цене</a>
               <a class="sort" href="#">по типу</a>
               <a class="sort" href="#">по рейтингу</a>
+              <a class="sort-arrow" href="#"></a>
+              <a class="sort-arrow reverse" href="#"></a>
+              </div>
               <ul class="list-results">
                   <li class="first-result">
                       <img src="#" width="135" height="90" alt="Amara resort &amp; Spa">
                       <h3>Amara resort 	&amp; spa</h3>
-                      <p>Гостиница</p>
-                      <p>от 4000 рублей</p>
-                      <a class="list-results button" href="#">Подробнее</a>
-                      <a class="list-results button" href="#">Забронировать</a>
+                      <p>Гостиница от 4000 рублей</p>
+                      <a class="button-more" href="#">Подробнее</a>
+                      <a class="button-reservation" href="#">Забронировать</a>
+                      <div class="rating-elements">
                       <div class="stars"></div>
                       <p class="rating">рейтинг: 8,5</p>
+                      </div> 
                   </li>
                    <li class="second-result">
                       <img src="#" width="135" height="90" alt="Desert quail inn">
                       <h3>Desert quail inn</h3>
-                      <p>Мотель</p>
-                      <p>от 3000 рублей</p>
-                      <a class="list-results button" href="#">Подробнее</a>
-                      <a class="list-results button" href="#">Забронировать</a>
+                      <p>Мотель от 3000 рублей</p>
+                      <a class="button-more" href="#">Подробнее</a>
+                      <a class="button-reservation" href="#">Забронировать</a>
+                      <div class="rating-elements">
                       <div class="stars"></div>
                       <p class="rating">рейтинг: 8,9</p>
+                      </div>   
                   </li>
                   <li class="third-result">
                       <img src="#" width="135" height="90" alt="Villas at poco Diablo">
                       <h3>Villas at poco Diablo</h3>
-                      <p>Апартаменты</p>
-                      <p>от 2000 рублей</p>
-                      <a class="list-results button" href="#">Подробнее</a>
-                      <a class="list-results button" href="#">Забронировать</a>
+                      <p>Апартаменты от 2000 рублей</p>
+                      <a class="button-more" href="#">Подробнее</a>
+                      <a class="button-reservation" href="#">Забронировать</a>
+                      <div class="rating-elements">
                       <div class="stars"></div>
                       <p class="rating">рейтинг: 9,2</p>
+                      </div>
                   </li>
               </ul>
           </section>
@@ -120,8 +127,10 @@
           </div>
           <p class="footer-copyright">
               <b>website by</b>
-              <a class="button" href="https://htmlacademy.ru">HTML academy</a>
+              <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML academy</a>
           </p>
       </footer>
+      <script src="script.js"></script>
+
     </body>
 </html>
