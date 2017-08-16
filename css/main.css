@@ -1,0 +1,32 @@
+body {
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+    font-weight: bold;
+    font-family: "PT Sans", "Arial", sans-serif;
+    text-transform: uppercase;
+}
+.visually-hidden {
+    display: none;
+}
+.header2 {
+    line-height: 26px;
+    font-weight: normal;
+    }
+.header3 {
+    font-size: 21px;
+    color: #000000;
+    }
+.header3-white {
+    font-size: 21px;
+    color: #ffffff;
+    }
+.header3-hotels {
+     font-size: 21px;
+     line-height: 26px;
+     color: #000000;
+}
+.font-white {
+    color: #ffffff;
+    background: #81b3d2;
+}
