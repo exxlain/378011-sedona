@@ -78,6 +78,11 @@ p.idea {
     width: 458px;
     height: 352px;
 }
+.shape {
+    background: url(../img/Shape-1.png) center no-repeat;
+    width: 1200px;
+    height: 57px;
+}
 .all-features ul {
     list-style: none;
 }
@@ -97,7 +102,9 @@ p.idea {
 }
 .reasons > li:nth-child(3){
     background: #81b3d2 url(../img/reason-2.jpg) top left no-repeat;
- 
+}
+.reasons li:nth-child(n+4) {
+    background-color: #eeeeee;
 }
 .interested-in {
     font-size: 30px;
@@ -175,7 +182,6 @@ p.idea {
     color: #81b3d2;
 }
 .calendar {
-    font-size: 0;
     stroke: #cacaca;
     border: none;
   }
@@ -188,6 +194,10 @@ p.idea {
 .main-footer {
     color: #000000;
     background-color: #ffffff;
+}
+ .hotels-footer {
+    color: #000000;
+    background-color: #fefefe;  
 }
 .footer-social {
     text-align: center;
@@ -206,7 +216,7 @@ p.idea {
     text-align: center;
 }
 .hotels-inner {
-    background: #ffffff;
+    background: #fefefe;
 }
 .filter fieldset {
     border: none;
@@ -215,7 +225,7 @@ fieldset label{
     font-weight: normal;
 }
 .hotels {
-    background-color: #000000;
+    background-color: #fefefe;
     background-image: url(../img/top-background-hotels.jpg);
     color: #ffffff;
     background-position: top center;
@@ -279,6 +289,7 @@ fieldset label{
 }
 .result p:first-of-type {
     font-weight: normal;
+    color: #333333;
 }
 .header3-hotels:hover,
 .header3-hotels:focus {

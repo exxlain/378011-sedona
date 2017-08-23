@@ -8,7 +8,7 @@
     <link href="css/main.css" rel="stylesheet">
   </head>
   <body class="hotels-inner">
-      <header class="main-header">
+      <header class="main-header ">
           <nav class="main-navigation">
               <a class="main-header-logo" href="index.html">
                     <img src="img/index-logo.png" width="138" height="70" alt="Логотип Седоны">
@@ -78,39 +78,55 @@
                 <a class="sort active-sort" href="#">по цене</a>
                 <a class="sort" href="#">по типу</a>
                 <a class="sort" href="#">по рейтингу</a>
-                <a class="sort-arrow" href="#"></a>
-                <a class="sort-arrow reverse" href="#"></a>
+                <a class="sort-arrow" href="#">
+                    <span class="visually-hidden">Сортировка по возрастанию</span>
+                </a>
+                <a class="sort-arrow reverse" href="#">
+                  <span class="visually-hidden">Сортировка по убыванию</span>
+                </a>
               </div>
               </div>
               <ul class="list-results">
                   <li class="result">
-                      <img src="img/Amara-resort.jpg" width="135" height="90" alt="Amara resort &amp; Spa">
-                      <h3 class="header3-hotels">Amara resort 	&amp; spa</h3>
-                      <p>Гостиница от 4000 рублей</p>
+                      <div class="result-elements">
+                          <a href="result.html">
+                            <img src="img/Amara-resort.jpg" width="135" height="90" alt="Amara resort &amp; Spa">
+                            <h3 class="header3-hotels">Amara resort 	&amp; spa</h3>
+                            <p>Гостиница от 4000 рублей</p>
+                          </a>
                       <a class="button submit" href="#">Подробнее</a>
                       <a class="button search" href="#">Забронировать</a>
+                      </div>
                       <div class="rating-elements">
                       <div class="stars"></div>
                       <p class="rating">рейтинг: 8,5</p>
                       </div> 
                   </li>
                    <li class="result">
-                      <img src="img/Desert-quail-inn.jpg" width="135" height="90" alt="Desert quail inn">
-                      <h3 class="header3-hotels">Desert quail inn</h3>
-                      <p>Мотель от 3000 рублей</p>
-                      <a class="button submit" href="#">Подробнее</a>
-                      <a class="button search" href="#">Забронировать</a>
+                      <div class="result-elements">
+                        <a href="result.html">
+                            <img src="img/Desert-quail-inn.jpg" width="135" height="90" alt="Desert quail inn">
+                            <h3 class="header3-hotels">Desert quail inn</h3>
+                            <p>Мотель от 3000 рублей</p>
+                       </a>
+                       <a class="button submit" href="#">Подробнее</a>
+                       <a class="button search" href="#">Забронировать</a>
+                      </div>
                       <div class="rating-elements">
                       <div class="stars"></div>
                       <p class="rating">рейтинг: 8,9</p>
                       </div>   
                   </li>
                   <li class="result">
-                      <img src="img/Villas-at-poco-Diablo.jpg" width="135" height="90" alt="Villas at poco Diablo">
-                      <h3 class="header3-hotels">Villas at poco Diablo</h3>
-                      <p>Апартаменты от 2000 рублей</p>
-                      <a class="button submit" href="#">Подробнее</a>
-                      <a class="button search" href="#">Забронировать</a>
+                      <div class="result-elements">
+                        <a href="result.html">
+                            <img src="img/Villas-at-poco-Diablo.jpg" width="135" height="90" alt="Villas at poco Diablo">
+                            <h3 class="header3-hotels">Villas at poco Diablo</h3>
+                            <p>Апартаменты от 2000 рублей</p>
+                        </a>   
+                        <a class="button submit" href="#">Подробнее</a>
+                        <a class="button search" href="#">Забронировать</a>
+                      </div>
                       <div class="rating-elements">
                       <div class="stars"></div>
                       <p class="rating">рейтинг: 9,2</p>
@@ -119,7 +135,7 @@
               </ul>
           </section>
       </main>
-      <footer class="main-footer">
+      <footer class="hotels-footer">
           <p class="tag">#visitsedona</p>
           <div class="footer-social">
             <ul>
