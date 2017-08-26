@@ -8,17 +8,18 @@
     <link href="css/main.css" rel="stylesheet">
   </head>
   <body class="hotels-inner">
-      <header class="main-header ">
+      <header class="main-header container">
           <nav class="main-navigation">
               <a class="main-header-logo" href="index.html">
                     <img src="img/index-logo.png" width="138" height="70" alt="Логотип Седоны">
               </a>
-              <ul class="site-navigation">
-                  <li ><a href="info.html">Информация</a></li>
-                  <li><a href="foto_and_video.html">Фото и видео</a></li>
-                  <li><a href="map.html">Карта штата</a></li>
-                  <li class="site-navigation-current"><a href="hotels.html">Гостиницы</a></li>
-              </ul>
+            
+                    <ul class="site-navigation">
+                        <li ><a href="info.html">Информация</a></li>
+                        <li><a href="foto_and_video.html">Фото и видео</a></li>
+                        <li><a href="map.html">Карта штата</a></li>
+                        <li class="site-navigation-current"><a href="hotels.html">Гостиницы</a></li>
+                  </ul>
           </nav>
       </header>
       <main class="container">
@@ -27,7 +28,8 @@
               <div class="filters">
                   <h2 class="visually-hidden">Фильтр отелей</h2>
                   <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-                  <fieldset>
+                  <div class="filters-wrapper">
+                    <fieldset>
                       <legend>Инфраструктура:</legend>
                       <ul>
                         <li class="filter-option"> 
@@ -67,6 +69,7 @@
                       <div class="slider"></div>
                        <button type="submit" class="price-button">Показать</button>
                    </fieldset>
+                      </div>
                    </form>
               </div>
           </section>
@@ -89,53 +92,79 @@
               <ul class="list-results">
                   <li class="result">
                       <div class="result-elements">
-                          <a href="result.html">
-                            <img src="img/Amara-resort.jpg" width="135" height="90" alt="Amara resort &amp; Spa">
-                            <h3 class="header3-hotels">Amara resort 	&amp; spa</h3>
-                            <p>Гостиница от 4000 рублей</p>
-                          </a>
-                      <a class="button submit" href="#">Подробнее</a>
-                      <a class="button search" href="#">Забронировать</a>
+                          <div class="wrapper-list">
+                              <a href="result.html">
+                                <img src="img/Amara-resort.jpg" width="135" height="90" alt="Amara resort &amp; Spa">
+                             </a>
+                            <div class="for-wrapper">
+                                <a href="result.html">
+                                    <h3 class="header3-hotels">Amara resort 	&amp; spa</h3>
+                                    <p>Гостиница от 4000 рублей</p>
+                                </a>
+                                <div class="flex-button">
+                                    <a class="button submit" href="#">Подробнее</a>
+                                    <a class="button search" href="#">Забронировать</a>
+                                </div>
+                              </div>
+                            </div>                      
                       </div>
                       <div class="rating-elements">
                       <div class="stars"></div>
                       <p class="rating">рейтинг: 8,5</p>
-                      </div> 
+                      </div>
+                          
                   </li>
                    <li class="result">
                       <div class="result-elements">
-                        <a href="result.html">
-                            <img src="img/Desert-quail-inn.jpg" width="135" height="90" alt="Desert quail inn">
-                            <h3 class="header3-hotels">Desert quail inn</h3>
-                            <p>Мотель от 3000 рублей</p>
-                       </a>
-                       <a class="button submit" href="#">Подробнее</a>
-                       <a class="button search" href="#">Забронировать</a>
-                      </div>
+                        <div class="wrapper-list">
+                            <a href="result.html">
+                                <img src="img/Desert-quail-inn.jpg" width="135" height="90" alt="Desert quail inn">
+                            </a>
+                            <div class="for-wrapper">
+                                <a href="result.html">
+                                    <h3 class="header3-hotels">Desert quail inn</h3>
+                                    <p>Мотель от 3000 рублей</p>
+                                </a>
+                                <div class="flex-button">
+                                    <a class="button submit" href="#">Подробнее</a>
+                                    <a class="button search" href="#">Забронировать</a>
+                                </div>
+                            </div>
+                         </div>
+                           </div>
                       <div class="rating-elements">
-                      <div class="stars"></div>
-                      <p class="rating">рейтинг: 8,9</p>
+                        <div class="stars"></div>
+                        <p class="rating">рейтинг: 8,9</p>
                       </div>   
                   </li>
                   <li class="result">
                       <div class="result-elements">
-                        <a href="result.html">
-                            <img src="img/Villas-at-poco-Diablo.jpg" width="135" height="90" alt="Villas at poco Diablo">
-                            <h3 class="header3-hotels">Villas at poco Diablo</h3>
-                            <p>Апартаменты от 2000 рублей</p>
-                        </a>   
-                        <a class="button submit" href="#">Подробнее</a>
-                        <a class="button search" href="#">Забронировать</a>
+                        <div class="wrapper-list">
+                            <a href="result.html">
+                                <img src="img/Villas-at-poco-Diablo.jpg" width="135" height="90" alt="Villas at poco Diablo">
+                            </a>
+                             <div class="for-wrapper">
+                                 <a href="result.html">   
+                                    <h3 class="header3-hotels">Villas at poco Diablo</h3>
+                                     <p>Апартаменты от 2000 рублей</p>
+                                 </a>   
+                                <div class="flex-button">
+                                    <a class="button submit" href="#">Подробнее</a>
+                                    <a class="button search" href="#">Забронировать</a>
+                                 </div>
+                            </div>
+                        </div>
                       </div>
                       <div class="rating-elements">
-                      <div class="stars"></div>
-                      <p class="rating">рейтинг: 9,2</p>
+                          <div class="stars"></div>
+                          <p class="rating">рейтинг: 9,2</p>
                       </div>
                   </li>
               </ul>
           </section>
       </main>
       <footer class="hotels-footer">
+          <div class="container">
           <p class="tag">#visitsedona</p>
           <div class="footer-social">
             <ul>
@@ -157,6 +186,7 @@
               <b>website by</b>
               <a class="button-logo" href="https://htmlacademy.ru/intensive/htmlcss">HTML academy</a>
           </p>
+        </div>
       </footer>
  
     </body>
