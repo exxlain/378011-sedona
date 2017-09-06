@@ -389,8 +389,8 @@ p.kids-wrapper {
 }
 .symbol { 
  display: block;
-
- border: 1px solid black;   
+ 
+  
 }
 /*.symbol.minus1 {
     top: 6px;
@@ -597,12 +597,7 @@ fieldset label{
     justify-content: space-between;
    
 }
-.hotels fieldset:nth-of-type(2){
-    margin-left: -210px;
-}
-.hotels fieldset:last-of-type{
-    
-}
+
 .filter legend { 
     font-size: 16px;
     line-height: 21px;
@@ -640,7 +635,7 @@ fieldset label{
   content: '';
   position: absolute;
   left: 0px;
-  width: 23px;
+  width: 25px;
   height: 23px;
   background-image: url(../img/checkbox-off.svg);
   background-position: top center;
@@ -653,10 +648,7 @@ fieldset label{
   background-repeat: no-repeat;
 }
 
-} 
-.checkbox:checked + label:after {
-  left: 26px;
-}
+
 
 .price-button {
     display: block;
@@ -671,9 +663,7 @@ fieldset label{
     line-height: 20px;
     text-transform: uppercase;
 }
-.filter-range legend {
-    margin-bottom: 10px; 
-}
+
 .price-controls {
     height: 36px;
     margin-bottom: 20px;
@@ -843,20 +833,18 @@ fieldset label{
 .result {
     display: flex;
     justify-content: space-between;
-    padding-top: 30px;
-    padding-bottom: 25px;
-    padding-left: 72px;
-    padding-right: 72px;
+    padding: 30px 72px 25px 72px;
     border-bottom: 1px solid #e5e5e5;
-    flex-grow: 0;
+    
 } 
 .result-elements{
     display: flex;
-    
+    flex-flow: row wrap;
 }
 
 .for-wrapper p{
     padding: 0;
+    padding-top: 7px;
     margin: 0;
  }
 
@@ -895,6 +883,13 @@ fieldset label{
 .for-wrapper .search {
    width: 142px;
     height: 27px;
+}
+.for-wrapper .name {
+    display: flex;
+    justify-content: flex-start;
+}
+.name span{
+   width: 45%; 
 }
 .result-elements img {
     padding-right: 30px;
