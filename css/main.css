@@ -93,9 +93,6 @@ a {
 .captions img {
     margin-top: 75px;
 }
-.hotels-inner .site-navigation {
-    margin: 0;
-}
 .main-header-logo {
     display: block;
     position: absolute;
@@ -367,7 +364,7 @@ span.control-wrapper {
      border: none;
      text-align: center;
      height: 38px;
-     
+     width: 38px;
     }
 
 /*.adult-wrapper, .kids-wrapper  
@@ -376,9 +373,7 @@ span.control-wrapper {
 }*/
 .calc-control {
     display: flex;
-    flex-flow: row nowrap;
-    width: 114px;
-    
+    flex-flow: row nowrap;  
 }
 
 p.adult-wrapper {
@@ -388,31 +383,15 @@ p.kids-wrapper {
     min-width: 178px;
 }
 .symbol { 
- display: block;
- 
-  
+ height: 38px;
+ width: 38px;
+ background-color: #f2f2f2;
+ color: #a9a9a9;
+ border: none;
+ font-size: 21px;
+ font-weight: bold;
 }
-/*.symbol.minus1 {
-    top: 6px;
-    right: 97px;
-    background: none;
-    color: #a9a9a9;
-}
-.symbol.minus2 {
-     top: 6px;
-    right: 80px;
-    background: none;
-}
-.symbol.plus1 {
-    top: 6px;
-    right: 17px;
-    background: none;
-}
-.symbol.plus2 {
-    top: 6px;
-    right: 4px;
-    background: none;
-}*/
+
 .button.find {
     width: 100%;
     height: 58px;
@@ -453,11 +432,7 @@ p.kids-wrapper {
     background-color: #ffffff;
     border: 2px solid e5e5e5;
 }
-.symbol {
-   color: #a9a9a9;
-   border: none;
-   background-color: #ffffff;
-}
+
 .symbol:hover,
 .symbol:focus {
     color: #000000;
@@ -485,13 +460,15 @@ p.kids-wrapper {
 .main-body {
     position: relative;
 }
-.main-footer  {
+.main-footer, .hotels-footer  {
     color: #000000;
     background-color: rgba(255, 255, 255, 0.9);
     position: absolute;
+    left:50%; 
+    transform: translateX(-50%);
     bottom: 0;
     width: 100%;
-   
+    max-width: 1200px;
 }
 .main-footer ul, .hotels-footer ul {
     list-style: none;
@@ -507,7 +484,8 @@ p.kids-wrapper {
 .main-footer .container,
 .hotels-footer .container {
   display: flex;
-  justify-content: space-between;    
+  justify-content: space-between;
+ 
 }
 .tag {
     font-size: 21px;
@@ -559,7 +537,7 @@ p.kids-wrapper {
     position: absolute;
     width: 115px;
     height: 49px;
-    right: 260px;
+    right: 100px;
     top: 36px;
    
 }
@@ -573,9 +551,6 @@ p.kids-wrapper {
      
 }
 
-.hotels-inner {
-    background: #fefefe;
-}
 .filter fieldset {
     border: none;
 }
@@ -817,6 +792,9 @@ fieldset label{
 .sort-arrow.reverse {
     right: 74px;
     top: 35px;
+}
+.hotels-results {
+    background-color: #fefefe;
 }
 .hotels-results .list-results {
     list-style: none;
