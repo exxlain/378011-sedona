@@ -580,11 +580,11 @@ fieldset label{
 .filter ul {
   list-style: none;
   line-height: 21px;
-  padding-top: 20px;
+  margin-top: 20px;
 
 }
 .filter ul li{
-    padding-bottom: 25px;
+    margin-bottom: 25px;
     
 }
 .filter-range {
