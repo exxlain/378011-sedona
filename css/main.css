@@ -178,7 +178,7 @@ p.idea {
   margin-left: auto;
   width: 400px;
   text-align: center;
-  padding: 45px 60px 60px;
+  padding: 45px 40px 60px;
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
@@ -281,6 +281,7 @@ p.idea {
     color: #ffffff;
     vertical-align: middle;
     border: none;
+
 }
 .button.search {
     background-color: #766357;   
@@ -295,7 +296,6 @@ p.idea {
    line-height: 21px;
 }
 .button.search-modal {
-    padding: 0;
     text-align: center;
     display: block;
     margin: 45px auto 0;
@@ -309,6 +309,7 @@ p.idea {
 .form-wrapper {
     position: relative;
     text-align: center;
+ 
 }
 .search-hotels {
     width: 569px;
@@ -363,10 +364,6 @@ span.control-wrapper {
      width: 38px;
     }
 
-/*.adult-wrapper, .kids-wrapper  
-   {
-   position: relative;
-}*/
 .calc-control {
     display: flex;
     flex-flow: row nowrap;  
@@ -482,7 +479,7 @@ p.kids-wrapper {
     line-height: 26px;
     display: block;
     padding: 0;
-    width: 137px;
+    width: 135px;
     margin: auto;
 }
 
@@ -507,7 +504,7 @@ p.kids-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 200px;
+    width: 195px;
     padding: 0;
     margin: 0 auto;
   
@@ -565,6 +562,7 @@ p.kids-wrapper {
 fieldset label{
     font-weight: normal;
 }
+
 .hotels {
     background-color: #fefefe;
     background-image: url(../img/top-background-hotels.jpg);
@@ -577,17 +575,19 @@ fieldset label{
 }
 .filter {
     display: flex;
-    justify-content: space-between;
-   
+    justify-content: space-between; 
 }
+
 
 .filter legend { 
     font-size: 16px;
     line-height: 21px;
     margin: 0;
-    padding: 0;
-    
+    padding: 0; 
    
+}
+.filter fieldset:nth-child(2)  {
+   margin-right: 225px; 
 }
 .filter ul {
   list-style: none;
@@ -599,10 +599,12 @@ fieldset label{
     padding-bottom: 25px;
 }
 .filter-range {
-    width: 330px;
+    width: 317px;
     color: #ffffff;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+
 }
 
 
@@ -643,17 +645,20 @@ fieldset label{
     background: transparent;
     color: #ffffff;
     cursor: pointer;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 21px;
     text-transform: uppercase;
+    font-family: inherit;
 }
 
 .price-controls {
-    height: 36px;
+    height: 35px;
     margin-bottom: 20px;
     border: 2px solid #ffffff;
     border-radius: 2px;
     font-size: 0;
     position: relative;
+    
 }
 .price-controls::after {
     content: "";
@@ -819,7 +824,7 @@ fieldset label{
 .result {
     display: flex;
     justify-content: space-between;
-    padding: 30px 72px 25px 72px;
+    padding: 30px 72px 25px;
     border-bottom: 1px solid #e5e5e5;
     
 } 
@@ -827,7 +832,9 @@ fieldset label{
     display: flex;
     flex-flow: row wrap;
 }
-
+.for-wrapper {
+ margin-top: -6px;
+}
 .for-wrapper p{
     padding: 0;
     padding-top: 7px;
@@ -859,7 +866,7 @@ fieldset label{
 }
 
 .result-button {
-    margin-top: 25px;
+    margin-top: 15px;
 }
 .for-wrapper .submit {
    margin-right: 6px;
