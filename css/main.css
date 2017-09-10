@@ -47,14 +47,16 @@ img {
     font-size: 21px;
     line-height: 26px;
     color: #000000;
+   
 }
 .font-white {
     color: #ffffff;
 }
 a {
    text-decoration: none;
-    margin: 0;
-    padding: 0;
+}
+.header3-hotels a{
+     color: #000000; 
 }
 .main-wrapper {
     width: 100%;
@@ -155,7 +157,7 @@ p.idea {
     background: #81b3d2 url(../img/reason-1.jpg) 100%  54% no-repeat;
     background-size: 66.69%;
     width: 100%;
-    min-height: 257px;
+    min-height: 256px;
 }
 
 .reason-item-left-wrapper {
@@ -172,7 +174,7 @@ p.idea {
     background: #81b3d2 url(../img/reason-2.jpg) 0% 54%  no-repeat;
     background-size: 66.69%;
     width: 100%; 
-    min-height: 255px;
+    min-height: 256px;
 }
 .reason-item-right-wrapper {
   box-sizing: border-box;
@@ -188,7 +190,7 @@ p.idea {
 .reasons .reason-item-withoutfoto {
     background-color: #eeeeee;
     width: 33.3%;
-    height: 257px;
+    min-height: 257px;
     box-sizing: border-box;
     padding: 45px 60px 60px;
     display: flex;
@@ -213,11 +215,7 @@ p.idea {
   box-sizing: border-box;   
 }
 
-.feature-item {
-    width: 33.33%;
-    box-sizing: border-box;
-    padding: 0 50px 82px;
- }
+
 
 .feature-item .header3{
     position: relative;
@@ -248,9 +246,12 @@ p.idea {
     height: 76px;
     width: 64px; 
 }
-.features li{
-    width: 400px;
-}
+
+.feature-item {
+    width: 33.33%;
+    box-sizing: border-box;
+    padding: 0 50px 82px;
+ }
  .feature-item p{
     margin: 0;
     padding: 0;
@@ -298,7 +299,7 @@ p.idea {
 .button.search-modal {
     text-align: center;
     display: block;
-    margin: 45px auto 0;
+    margin: 0 auto;
     font-size: 21px;
     line-height: 26px;
     width: 47.42%;
@@ -309,6 +310,7 @@ p.idea {
 .form-wrapper {
     position: relative;
     text-align: center;
+    margin-top: 45px;
  
 }
 .search-hotels {
@@ -383,6 +385,7 @@ p.kids-wrapper {
  border: none;
  font-size: 21px;
  font-weight: bold;
+ cursor: pointer;
 }
 
 .button.find {
@@ -454,14 +457,16 @@ p.kids-wrapper {
     height: 593px;
   
 }
+.map-wrapper {
+    font-size: 0;
+    line-height: 1;
 
+}
 .main-footer  {
     color: #000000;
     background-color: rgba(255, 255, 255, 0.9);
-    width: 100%;
-    max-width: 1200px;
     box-sizing: border-box;
-    padding: 40px 0;
+    padding: 36px 0;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
@@ -471,6 +476,7 @@ p.kids-wrapper {
     position: absolute;
     bottom: 0px;
     left: 0;
+    width: 100%;
 }
 
 .tag {
@@ -606,6 +612,7 @@ fieldset label{
 .checkbox + label:before, .checkbox:disabled + label:before {
   content: '';
   position: absolute;
+  top: 0px;
   left: 0px;
   width: 27px;
   height: 23px;
@@ -618,6 +625,8 @@ fieldset label{
   background-image: url(../img/checkbox-on.svg);
   background-position: top center;
   background-repeat: no-repeat;
+  top: 0px;
+  left: 3px;
 }
 .checkbox:disabled + label:before{
       background-image: url(../img/checkbox-off-disabled.svg);
@@ -729,34 +738,40 @@ fieldset:last-child legend{
 }
 .results-quantity-sort {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-bottom: 1px solid #e5e5e5;
-    padding: 30px 0 30px 72px;
+    padding: 30px 72px;
     position: relative;
 }
+
+
+.sort-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+  }
 .quantity {
     font-size: 21px;
     line-height: 26px; 
     color: #000000;
-    margin: 0;
-    padding: 0;
+    margin-right: 48px;
 }
-
-.sort-flex {
-    display: flex;
-    font-size: 12px;
-    line-height: 18px;
-    color: #000000;
-    padding: 6px 0 0 48px;
-   
-  }
 .sort-by {
     margin-right: 40px;
 }
 .sort-flex a{
-    display: inline-block;
     margin-right: 34px;
 }
-
+.arrows {
+    width: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
 .sort {
     color: rgba(0, 0, 0, 0.3);
     border-bottom: 1px dotted #81b3d2;
@@ -772,13 +787,9 @@ fieldset:last-child legend{
     color: #81b3d2;
     border: none;
 }
-
-
 .sort-arrow{
     width: 11px;
     height: 10px;
-    position: absolute;
-    
 }
 .sort-arrow svg path{
    fill: #cacaca; 
@@ -790,14 +801,7 @@ fieldset:last-child legend{
 .sort-arrow:active svg path, .active-arrow svg path {
    fill: #81b3d2; 
 }
-.sort-arrow.normal {
-    right: 96px;
-    top: 35px;
-}
-.sort-arrow.reverse {
-    right: 74px;
-    top: 35px;
-}
+
 .hotels-results {
     background-color: #fefefe;
 }
@@ -805,46 +809,46 @@ fieldset:last-child legend{
     list-style: none;
     margin: 0;
     padding: 0;
+    
 }
-
-.header3-hotels {
-    margin: 0;
-    padding: 0;
-}
-
-
 .result {
     display: flex;
     justify-content: space-between;
-    padding: 29px 72px 25px;
-    border-bottom: 1px solid #e5e5e5;
-    
+    padding: 30px 72px;
+    border-bottom: 1px solid #e5e5e5; 
+    height: 150px;
+    box-sizing: border-box;
 } 
 .result-elements{
     display: flex;
     flex-flow: row wrap;
 }
-.for-wrapper {
-    margin-top: -6px;
+
+
+.result-elements .picture{
+    margin-right: 30px;
+    line-height: 1; 
+    font-size: 0;
+    
 }
-.for-wrapper p{
-    padding: 10px 0 0 0;
-    margin: 0;
- }
 
 .rating {
     display: block;
-    margin: 45px 0 0 0;
+    margin: 0;
     background-color: #f2f2f2;
-    padding: 5px 13px 5px 13px;
+    padding: 3px 14px;
     font-weight: normal;
     color: #666666;
 }
+.rating-elements {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
 .rating-elements ul {
    list-style: none;
-   display: flex;
-   padding: 0;
-   margin: 0 -5px 0 0;
+    display: flex;
+    padding: 0;
    justify-content: flex-end;
    }
 .stars li {
@@ -852,37 +856,32 @@ fieldset:last-child legend{
     background-repeat: no-repeat; 
     width: 18px;
     height: 17px;
-    padding-left: 5px;
+    margin-left: 6px;
 }
 
-.result-button {
-    margin-top: 15px;
+ .for-wrapper .header3-hotels {
+ margin-top: -6px;
 }
+
 .for-wrapper .submit {
     margin-right: 4px;
-    width: 110px;
-    height: 27px;
-}
-.for-wrapper .search {
-   width: 142px;
-   height: 27px;
 }
 .for-wrapper .name {
     display: flex;
-    justify-content: flex-start;
-}
-.name span{
-   width: 45%; 
-}
-.result-elements img {
-    padding-right: 30px;
-   
-}
-
-.result p:first-of-type {
+    flex-flow: row nowrap;
     font-weight: normal;
     color: #333333;
+ 
 }
+.name {
+    margin-top: 10px;
+}
+.name span:first-child{
+   min-width: 115px; 
+}
+
+
+
 .header3-hotels:hover,
 .header3-hotels:focus {
     color: #81b3d2;
