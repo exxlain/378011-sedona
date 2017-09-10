@@ -123,6 +123,9 @@ a {
     color: rgba(0, 0, 0, 0.3);
 }
 
+.site-navigation-current a {
+    color: #766357; 
+}
 p.idea { 
     font-size: 21px;
     line-height: 26px;
@@ -339,12 +342,23 @@ span.control-wrapper {
     width: 75.54%;
     position: relative;
 }
-.search-hotels  input[type="text"] {
+ .search-hotels input  {
     font: inherit;
     color: #000000;
     background-color: #f2f2f2;
     box-sizing: border-box;
+    border: none;
  }
+
+.search-hotels .date:hover,
+.search-hotels .date2:hover{
+    background-color: #ebebeb;
+}
+.search-hotels .date:focus,
+.search-hotels .date2:focus{
+    background-color: #ffffff;
+}
+
 .search-hotels input[class="date"], .search-hotels input[class="date2"] {
   box-sizing: border-box;
   width: 100%;
@@ -394,6 +408,7 @@ p.kids-wrapper {
     font-size: 21px;
     cursor: pointer;
     margin: 23px 0 0 0;
+    font-family: inherit;
     }
 
 .button.search:hover,
@@ -413,20 +428,6 @@ p.kids-wrapper {
 .button.submit:active {
     background-color: #5496bd;
     color: rgba(255, 255, 255, 0.3)
-}
-.date,
-.date2 {
-    background-color: #f2f2f2;
-    border: none;
-}
-.date:hover,
-.date2:hover{
-    background-color: #ebebeb;
-}
-.date:focus,
-.date2:focus{
-    background-color: #ffffff;
-    border: 2px solid e5e5e5;
 }
 
 .symbol:hover,
@@ -540,14 +541,17 @@ p.kids-wrapper {
 .social-button:active path {
   fill: #88b6d1;
 }
+.button-logo svg {
+    fill: #231f20;
+}
 
-.button-logo:hover,
-.button-logo:focus {
-    stroke: #81b3d2;
+.button-logo:hover svg,
+.button-logo:focus svg{
+    fill: #81b3d2;
    
 }
-.button-logo:active {
-     stroke: #bdbbbc; 
+.button-logo:active svg{
+     fill: #bdbbbc; 
 }
 
 .filter fieldset {
@@ -612,21 +616,18 @@ fieldset label{
 .checkbox + label:before, .checkbox:disabled + label:before {
   content: '';
   position: absolute;
-  top: 0px;
+  top: -2px;
   left: 0px;
   width: 27px;
   height: 23px;
   background-image: url(../img/checkbox-off.svg);
-  background-position: top center;
+  background-position: 0px 0px;
   background-repeat: no-repeat;
   }
 
 .checkbox:checked + label:before {
   background-image: url(../img/checkbox-on.svg);
-  background-position: top center;
-  background-repeat: no-repeat;
-  top: 0px;
-  left: 3px;
+
 }
 .checkbox:disabled + label:before{
       background-image: url(../img/checkbox-off-disabled.svg);
@@ -723,6 +724,7 @@ fieldset:last-child legend{
     box-shadow: 0 2px 1px 0 rgba(0,1,1,0.2);
     cursor: pointer;
 }
+
 .range-toggle-min {
     left: 0;
 }
@@ -730,7 +732,9 @@ fieldset:last-child legend{
     left: 80%;
 }
 .range-toggle:hover {
-    background: #1c4f80;
+    width: 5px;
+    height: 5px;
+    
 }
 .result .button {
     font-size: 14px;
@@ -762,6 +766,7 @@ fieldset:last-child legend{
 }
 .sort-by {
     margin-right: 40px;
+    font-weight: normal;
 }
 .sort-flex a{
     margin-right: 34px;
@@ -816,7 +821,6 @@ fieldset:last-child legend{
     justify-content: space-between;
     padding: 30px 72px;
     border-bottom: 1px solid #e5e5e5; 
-    height: 150px;
     box-sizing: border-box;
 } 
 .result-elements{
@@ -871,21 +875,19 @@ fieldset:last-child legend{
     flex-flow: row nowrap;
     font-weight: normal;
     color: #333333;
- 
+ margin-top: 10px;
 }
-.name {
-    margin-top: 10px;
-}
+
 .name span:first-child{
    min-width: 115px; 
 }
 
 
 
-.header3-hotels:hover,
-.header3-hotels:focus {
+.header3-hotels a:hover,
+.header3-hotels a:focus {
     color: #81b3d2;
 }
-.header3-hotels:active {
+.header3-hotels a:active {
     color: rgba(0, 0, 0, 0.3);
 }
