@@ -171,7 +171,7 @@ p.idea {
     text-align: center;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    padding: 45px 60px 60px;
+    padding: 45px 55px 60px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -235,24 +235,29 @@ p.idea {
     padding: 0;
 }
 .features {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; 
-  -webkit-box-orient: horizontal; 
-  -webkit-box-direction: normal; 
-      -ms-flex-flow: row wrap; 
-          flex-flow: row wrap;
-  min-height: 330px;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
- }
+    height: 330px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+}
 .reason-item-features {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;   
+          box-sizing: border-box;
+    width: 100%;
 }
 .feature-item .header3{
     position: relative;
+    margin: 0 0 27px;
 }
 .feature-item .header3::before {
     content: "";
@@ -266,19 +271,19 @@ p.idea {
 }
 .feature-item.apartments .header3::before {
     background-image: url("../img/icon-1.svg");
-    bottom: 75px;
+    bottom: 50px;
     height: 72px;
     width: 75px;
 }
 .feature-item.food .header3::before {
     background: url("../img/icon-3.svg");
-    bottom: 77px;
+    bottom: 48px;
     height: 70px;
     width: 74px; 
 }
 .feature-item.souvenirs .header3::before {
     background: url("../img/icon-2.svg");
-    bottom: 76px;
+    bottom: 50px;
     height: 76px;
     width: 64px; 
 }
@@ -293,9 +298,9 @@ p.idea {
     margin: 0;
     padding: 0;
 }
-.feature-item h3 {
-    padding: 0 0 27px;
-}
+
+    
+
 .interested-in {
     font-size: 30px;
     line-height: 36px;
