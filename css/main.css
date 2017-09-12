@@ -1,3 +1,4 @@
+/*@media (min-width: 1199px){*/
 body {
     margin: 0;
     padding: 0;
@@ -47,6 +48,7 @@ img {
     line-height: 26px;
     color: #000000;
     margin-top: -6px;
+    max-width: 262px;
 }
 .font-white {
     color: #ffffff;
@@ -171,21 +173,11 @@ p.idea {
     min-height: 256px;
 }
 .reason-item-left-wrapper {
-    width: 400px;
+    width: 33.33%;
     text-align: center;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     padding: 45px 55px 60px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     height: 100%;
 }
 .reasons .reason-item-right{
@@ -198,19 +190,9 @@ p.idea {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-left: auto;
-  width: 400px;
+  width: 33.33%;
   text-align: center;
   padding: 45px 40px 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   height: 100%;  
  }
 .reasons .reason-item-withoutfoto {
@@ -220,16 +202,9 @@ p.idea {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     padding: 45px 60px 60px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+}
+.reason-item-left-wrapper h3, .reason-item-right-wrapper h3, .reason-item-withoutfoto h3{
+    margin: 0 0 28px 0;
 }
 .reason-item span,
 .reason-item p,
@@ -238,6 +213,11 @@ p.idea {
     margin: 0;
     padding: 0;
 }
+.reason-item-left-wrapper span, .reason-item-right-wrapper span, .reason-item-withoutfoto span{
+    display: block;
+    margin: 18px 0;
+}
+
 .features {
     height: 330px;
     display: -webkit-box;
@@ -249,10 +229,7 @@ p.idea {
     -webkit-flex-flow: row wrap;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
-    -webkit-box-align: end;
-    -webkit-align-items: flex-end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+
 }
 .reason-item-features {
   -webkit-box-sizing: border-box;
@@ -296,7 +273,7 @@ p.idea {
     width: 33.33%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    padding: 0 50px 82px;
+    padding: 160px 50px 82px;
  }
  .feature-item p{
     margin: 0;
@@ -346,7 +323,7 @@ p.idea {
     font-size: 21px;
     line-height: 26px;
     width: 47.42%;
-    height: 86px;
+    min-height: 86px;
     cursor: pointer;
     font-family: inherit;
 }
@@ -357,7 +334,7 @@ p.idea {
  
 }
 .search-hotels {
-    width: 569px;
+    width: 47,42%;
     background-color: #ffffff;
     margin: 0 auto;
     padding: 55px;
@@ -395,6 +372,10 @@ span.control-wrapper {
     width: 75.54%;
     position: relative;
 }
+.search-hotels label{
+    max-width: 93px;
+}
+
  .search-hotels input  {
     font: inherit;
     color: #000000;
@@ -425,8 +406,8 @@ span.control-wrapper {
    display: -ms-flexbox;
    display: flex;
    -webkit-box-pack: justify;
-       -ms-flex-pack: justify;
-           justify-content: space-between;
+   -ms-flex-pack: justify;
+   justify-content: space-between;
    width: 100%;
 }
 .search-hotels input[class="adults"], .search-hotels input[class="kids"] {
@@ -556,15 +537,14 @@ p.kids-wrapper {
     margin: auto;
     text-align: center;
 }
-.main-footer ul {
+.main-footer .footer-social {
     list-style: none;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 150px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-flow: row wrap;
+    justify-content: center
+    width: 100%;
     margin: 0 auto;
     padding: 0;
 }
@@ -599,6 +579,7 @@ p.kids-wrapper {
     background-color: #81b3d2;
     width: 47px;
     height: 49px;
+    margin-right: 6px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -643,7 +624,7 @@ fieldset label{
     background-repeat: no-repeat;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    padding: 25px 59px 0; 
+    padding: 25px 4.9% 0; 
 }
 .filter {
     display: -webkit-box;
@@ -660,7 +641,11 @@ fieldset label{
     padding: 0;   
 }
 .filter fieldset:nth-child(2)  {
-   margin-right: 230px; 
+   margin-right: 21%; 
+}
+.filter fieldset:last-child  {
+   width: 29.5%;
+   
 }
 .filter ul {
   list-style: none;
@@ -671,7 +656,6 @@ fieldset label{
   margin-bottom: 25px;    
 }
 .filter-range {
-    width: 317px;
     color: #ffffff;
     -webkit-box-sizing: border-box;
             box-sizing: border-box; 
@@ -748,15 +732,16 @@ fieldset:last-child legend{
     line-height: 32px;
     vertical-align: top;
     cursor: pointer;
+   
 }
 .price-controls .min-price,
 .price-controls .max-price {
-    width: 80px;
-    padding-left: 65px;
+    width: 25%;
+    padding:0 0 0 21%;
     cursor: pointer;
 }
 .price-controls input {
-    width: 50px;
+    width: 45%;
     margin: 0;
     color: inherit;
     font: inherit;
@@ -1033,4 +1018,19 @@ fieldset:last-child legend{
   z-index: 2;
   border: none;
   width: 100%;
+  font-size: 0;
+  line-height: 1;
+}
+/*}*/
+@media (min-width:767px) {
+    .captions {
+    background-image:  url(../img/shape-1.png), url(../img/top-background-index.jpg);
+    background-color: #ffffff, #3c5c70;
+    background-position: center bottom, center top;
+    background-repeat: no-repeat, no-repeat;
+    text-align: center;
+    background-size: 768px 37px, 768px 516px; 
+    min-height: 516px;
+}
+  
 }
