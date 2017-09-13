@@ -760,25 +760,25 @@
     }
     .price-controls label {
         display: inline-block;
+        vertical-align: center;
+        text-align: center;
         font-size: 14px;
         line-height: 32px;
-        vertical-align: top;
         cursor: pointer;
-    }
-    .price-controls .min-price,
-    .price-controls .max-price {
-        width: 26%;
-        padding: 0 0 0 21%;
+        width: 50%;
+        box-sizing: border-box;
+        padding: 0  0 0 8%;
         cursor: pointer;
     }
     .price-controls input {
-        width: 58%;
+        width: 30%;
         margin: 0;
         color: inherit;
         font: inherit;
         background: none;
         border: none;
-        outline: none;
+        outline: none
+        
     }
     .price-button:hover {
         background-color: #ffffff;
