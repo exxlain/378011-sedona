@@ -255,6 +255,7 @@
         content: "";
         position: absolute;
         display: inline-block;
+        vertical-align: top;
         background-repeat: no-repeat;
         left: 50%;
         -webkit-transform: translateX(-50%);
@@ -599,6 +600,7 @@
         width: 115px;
         height: 49px;
         display: inline-block;
+        vertical-align: top;
     }
     .social-button {
         background-color: #81b3d2;
@@ -766,19 +768,22 @@
         line-height: 32px;
         cursor: pointer;
         width: 50%;
+        -webkit-box-sizing: border-box;
         box-sizing: border-box;
-        padding: 0  0 0 8%;
-        cursor: pointer;
+        padding: 0 0 0 7%;
+    }
+    .price-controls label:first-child {
+        padding-left: 12%;
     }
     .price-controls input {
-        width: 30%;
+        width: 35%;
         margin: 0;
         color: inherit;
         font: inherit;
         background: none;
         border: none;
-        outline: none
-        
+        outline: none;
+        line-height: 26px;
     }
     .price-button:hover {
         background-color: #ffffff;
