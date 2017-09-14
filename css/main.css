@@ -178,7 +178,7 @@
         -webkit-background-size: 66.69% 66.69%;
         background-size: 66.69%;
         width: 100%;
-        min-height: 256px;
+        height: 256px;
     }
     .reason-item-left-wrapper {
         width: 33.33%;
@@ -193,7 +193,7 @@
         -webkit-background-size: 66.69% 66.69%;
         background-size: 66.69%;
         width: 100%;
-        min-height: 256px;
+        height: 256px;
     }
     .reason-item-right-wrapper {
         -webkit-box-sizing: border-box;
