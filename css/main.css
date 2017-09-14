@@ -94,7 +94,7 @@
         display: flex;
     }
     .captions {
-        background-image: url(../img/shape-1.png), url(../img/top-background-index.jpg);
+        background-image: url(../img/white-shape-1.png), url(../img/top-background-index.jpg);
         background-color: #3c5c70;
         background-repeat: no-repeat, no-repeat;
         text-align: center;
@@ -1122,7 +1122,7 @@
     }
     @media (min-width: 1199px) {
         .captions {
-            background-image: url(../img/shape-1.png), url(../img/top-background-index.jpg);
+            background-image: url(../img/white-shape-1.png), url(../img/top-background-index.jpg);
             background-color: #3c5c70;
             background-repeat: no-repeat, no-repeat;
             text-align: center;

@@ -10,7 +10,7 @@ link.addEventListener("click", function(evt) {
     evt.preventDefault();
     popup.classList.toggle("modal-show");
     popup.classList.toggle("modal-close");
-    login.focus();
+    date.focus()
 });
 
 popup.addEventListener("submit", function(evt) {
