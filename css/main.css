@@ -178,7 +178,7 @@
         width: 100%;
         min-height: 256px;
         -webkit-background-size: 66.69% 66.69%;
-        background-size: 66.69% 100%;
+        background-size: 66.69%;
     }
     .reason-item-left-wrapper {
         width: 33.33%;
@@ -193,7 +193,7 @@
         width: 100%;
         min-height: 256px;
         -webkit-background-size: 66.69% 66.69%;
-        background-size: 66.69% 100%;
+        background-size: 66.69%;
     }
     .reason-item-right-wrapper {
         -webkit-box-sizing: border-box;
@@ -1130,10 +1130,5 @@
             background-size: 100%, 100%;
             min-height: 507px;
             background-position: center bottom, center -57px;
-        }
-        .reasons .reason-item-right,
-        .reasons .reason-item-left {
-            -webkit-background-size: 66.69% 66.69%;
-            background-size: 66.69%;
         }
     }
